@@ -1,8 +1,46 @@
 {
+  "extends": [
+    "tslint-sonarts",
+    "tslint-clean-code"
+  ],
   "rulesDirectory": [
     "node_modules/codelyzer"
   ],
   "rules": {
+    "no-identical-conditions": true,
+    "no-case-with-or": true,
+    "no-useless-increment": true,
+    "no-element-overwrite": true,
+    "no-ignored-initial-value": true,
+    "no-ignored-return": true,
+    "no-self-assignment": true,
+    "no-use-of-empty-return-value": true,
+    "cognitive-complexity": true,
+    "no-commented-code": true,
+    "no-identical-functions": true,
+    "use-primitive-type": true,
+    "no-dead-store": true,
+    "no-gratuitous-expressions": true,
+    "mccabe-complexity": true,
+    "no-big-function": true,
+    "no-duplicated-branches": true,
+    "no-empty-nested-blocks": true,
+    "no-extra-semicolon": true,
+    "no-redundant-parentheses": true,
+    "no-return-type-any": true,
+    "no-statements-same-line": true,
+    "no-useless-cast": true,
+    "no-variable-usage-before-declaration": true,
+    "parameters-max-number": [true, 5],
+    "use-type-alias": true,
+
+    "prefer-dry-conditionals": true,
+    "no-for-each-push": true,
+    "no-flag-args": true,
+    "newspaper-order": true,
+    "try-catch-first": true,
+    "max-func-args": true,
+
     "arrow-return-shorthand": true,
     "callable-types": true,
     "class-name": true,

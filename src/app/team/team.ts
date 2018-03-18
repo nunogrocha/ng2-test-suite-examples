@@ -1,12 +1,12 @@
 export enum TeamColors {
-	Red,
-	Blue,
-	Green
+  Red,
+  Blue,
+  Green
 }
 
 export class Team {
-	name: string;
-	color: TeamColors;
-	
-	constructor() {}
+  name: string;
+  color: TeamColors;
+
+  constructor() {}
 }
