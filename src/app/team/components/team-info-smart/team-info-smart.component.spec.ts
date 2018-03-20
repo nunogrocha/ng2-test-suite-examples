@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TeamInfoSmartComponent } from './team-info-smart.component';
+import { TeamModuleModule } from '../../team-module.module';
+import { TeamColors } from '../../team';
 
 describe('TeamInfoSmartComponent', () => {
   let component: TeamInfoSmartComponent;
@@ -8,7 +10,9 @@ describe('TeamInfoSmartComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TeamInfoSmartComponent ]
+      imports: [
+        TeamModuleModule
+      ]
     })
     .compileComponents();
   }));
@@ -16,6 +20,10 @@ describe('TeamInfoSmartComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TeamInfoSmartComponent);
     component = fixture.componentInstance;
+    component.team = {
+      name: 'SLB',
+      color: TeamColors.Red
+    }
     fixture.detectChanges();
   });
 

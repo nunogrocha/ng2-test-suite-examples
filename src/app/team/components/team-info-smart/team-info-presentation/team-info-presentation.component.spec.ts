@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TeamInfoPresentationComponent } from './team-info-presentation.component';
+import { TeamModuleModule } from '../../../team-module.module';
+import { TeamColors } from '../../../team';
 
 describe('TeamInfoPresentationComponent', () => {
   let component: TeamInfoPresentationComponent;
@@ -8,7 +10,9 @@ describe('TeamInfoPresentationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TeamInfoPresentationComponent ]
+      imports: [
+        TeamModuleModule
+      ]
     })
     .compileComponents();
   }));
@@ -16,6 +20,10 @@ describe('TeamInfoPresentationComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TeamInfoPresentationComponent);
     component = fixture.componentInstance;
+    component.team = {
+      name: 'SLB',
+      color: TeamColors.Red
+    }
     fixture.detectChanges();
   });
 

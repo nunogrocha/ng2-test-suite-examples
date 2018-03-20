@@ -1,7 +1,8 @@
 {
   "extends": [
     "tslint-sonarts",
-    "tslint-clean-code"
+    "tslint-clean-code",
+    "tslint-microsoft-contrib"
   ],
   "rulesDirectory": [
     "node_modules/codelyzer"
